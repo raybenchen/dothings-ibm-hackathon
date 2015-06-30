@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:3000/ -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Personality Insights</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/watson-bootstrap-dark.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/doThings.js"></script>
+
+    <style type="text/css"></style>
+</head>
+<body>
+<div id="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="font-weight: 700; font-family: 'Montserrat','Helvetica Neue','Helvetica','Arial','sans-serif'; color: white"><i class="fa fa-play-circle"></i>  <span class="light" style="font-weight: 500;color:#7FED11">do</span>Things</a>
+
+    </div>
+    <!-- Top Menu Items -->
+    </nav>
+
+    <div class="container" style="margin-top: 5%">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <p class="text-info">Enter some text written by you to get personalized events you may like around the globe.</br> Go ahead, give it a try! </p>
+            <h2>Enter a text written by you</h2>
+            <div class="well">
+                <div class="form-group row">
+                    <div class="col-lg-12 col-xs-12">
+                        <textarea rows="8" required="true" placeholder="Please enter the text to analyze (minimum of 100 words)..."
+                                  class="content form-control">
+
+                        </textarea>
+                        <div class="text-right"><span class="wordsCount small" style="color: gray;"></span></div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-block clear-btn">Clear</button>
+                    </div>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-block analysis-btn">Analyze</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row" id="recommendations">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <h2>Recommended events you may like are:</h2>
+            <div id="events">
+
+            </div>
+            <a id="eventTemplate" style="display: none">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4 id="groupName"></h4>
+                        <h2 id="eventTitle"></h2>
+                        <h4 id="eventTime"></h4>
+                    </div>
+                </div>
+            </a>
+    </div>
+</div>
+
+
+</script><script type="text/javascript">(function () {
+    return window.SIG_EXT = {};
+})()
+</script>
+
+</div>
+    </div>
+
+</body>
+</html>
